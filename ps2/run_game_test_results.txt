@@ -1002,3 +1002,3818 @@ Your total score for this game is: 55
 =============================================================
 
 
+=============================================================
+RESULTS FOR TEST CASE: test_play_game_short
+WORD USED IN TEST: hi
+GUESSED LETTERS IN ORDER OF GUESS: ['h', 'e', 'i']
+************************
+YOUR OUTPUT:
+************************
+Loading word list from file...
+  55900 words loaded.
+efghijklmnopqrstuvwxyz
+acdefghijklmnoqrstuvwy
+bcdefghjklmnpqrstvxyz
+
+
+face
+ove
+
+
+bas*
+['f', 'c', 'a', 'e']
+f
+c
+a
+e
+['o', 'c', 'a', 'v', 'e']
+o
+c
+a
+v
+e
+[]
+['f', 'c', 'y', 'e']
+['a', 's', 'b', 'e']
+a
+s
+b
+e
+
+
+[]
+
+************************
+POSSIBLE CORRECT OUTPUT:
+************************
+Welcome to Hangman!
+I am thinking of a word that is 2 letters long.
+------
+You have 10 guesses left.
+Available letters: abcdefghijklmnopqrstuvwxyz
+Please guess a letter: h
+Good guess: h*
+------
+You have 10 guesses left.
+Available letters: abcdefgijklmnopqrstuvwxyz
+Please guess a letter: e
+Oops! That letter is not in my word: h*
+------
+You have 8 guesses left.
+Available letters: abcdfgijklmnopqrstuvwxyz
+Please guess a letter: i
+Good guess: hi
+------
+Congratulations, you won!
+Your total score for this game is: 22
+=============================================================
+
+
+=============================================================
+RESULTS FOR TEST CASE: test_play_game_short_fail
+WORD USED IN TEST: hi
+GUESSED LETTERS IN ORDER OF GUESS: ['n', 'e', 'i', 'm', 'u', 'k', 'l', 'p', 's']
+************************
+YOUR OUTPUT:
+************************
+
+
+[]
+
+************************
+POSSIBLE CORRECT OUTPUT:
+************************
+Welcome to hangman!
+I am thinking of a word that is 2 letters long.
+--------------
+You have 10 guesses left.
+Available Letters: abcdefghijklmnopqrstuvwxyz
+Please guess a letter: n
+Oops! That letter is not in my word: **
+--------------
+You have 9 guesses left.
+Available Letters: abcdefghijklmopqrstuvwxyz
+Please guess a letter: e
+Oops! That letter is not in my word: **
+--------------
+You have 7 guesses left.
+Available Letters: abcdfghijklmopqrstuvwxyz
+Please guess a letter: i
+Good guess: *i
+--------------
+You have 7 guesses left.
+Available Letters: abcdfghjklmopqrstuvwxyz
+Please guess a letter: m
+Oops! That letter is not in my word: *i
+--------------
+You have 6 guesses left.
+Available Letters: abcdfghjklopqrstuvwxyz
+Please guess a letter: u
+Oops! That letter is not in my word: *i
+--------------
+You have 4 guesses left.
+Available Letters: abcdfghjklopqrstvwxyz
+Please guess a letter: k
+Oops! That letter is not in my word: *i
+--------------
+You have 3 guesses left.
+Available Letters: abcdfghjlopqrstvwxyz
+Please guess a letter: l
+Oops! That letter is not in my word: *i
+--------------
+You have 2 guesses left.
+Available Letters: abcdfghjopqrstvwxyz
+Please guess a letter: p
+Oops! That letter is not in my word: *i
+--------------
+You have 1 guess left.
+Available Letters: abcdfghjoqrstvwxyz
+Please guess a letter: s
+Oops! That letter is not in my word: *i
+-------
+Sorry, you ran out of guesses. The word was hi
+=============================================================
+
+
+=============================================================
+RESULTS FOR TEST CASE: test_play_game_wildcard
+WORD USED IN TEST: wildcard
+GUESSED LETTERS IN ORDER OF GUESS: ['k', 'w', 'i', 'l', 'd', 'c', '!', '!']
+************************
+YOUR OUTPUT:
+************************
+
+
+[]
+
+************************
+POSSIBLE CORRECT OUTPUT:
+************************
+Welcome to hangman!
+I am thinking of a word that is 8 letters long
+------
+You have 10 guesses left
+Available letters: abcdefghijklmnopqrstuvwxyz
+Please guess a letter: k
+Oops! That letter is not in my word: ********
+------
+You have 9 guesses left
+Available letters: abcdefghijlmnopqrstuvwxyz
+Please guess a letter: w
+Good guess: w*******
+------
+You have 9 guesses left
+Available letters: abcdefghijlmnopqrstuvxyz
+Please guess a letter: i
+Good guess: wi******
+------
+You have 9 guesses left
+Available letters: abcdefghjlmnopqrstuvxyz
+Please guess a letter: l
+Good guess: wil*****
+------
+You have 9 guesses left
+Available letters: abcdefghjmnopqrstuvxyz
+Please guess a letter: d
+Good guess: wild***d
+------
+You have 9 guesses left
+Available letters: abcefghjmnopqrstuvxyz
+Please guess a letter: c
+Good guess: wildc**d
+------
+You have 9 guesses left
+Available letters: abefghjmnopqrstuvxyz
+Please guess a letter: !
+Letter revealed: a
+wildca+d
+------
+You have 6 guesses left
+Available letters: befghjmnopqrstuvxyz
+Please guess a letter: !
+Letter revealed: r
+Good guess: wildcard
+------
+Congratulations, you won!
+Your total score for this game is: 55
+
+=============================================================
+
+
+=============================================================
+RESULTS FOR TEST CASE: test_play_game_short
+WORD USED IN TEST: hi
+GUESSED LETTERS IN ORDER OF GUESS: ['h', 'e', 'i']
+************************
+YOUR OUTPUT:
+************************
+Loading word list from file...
+  55900 words loaded.
+efghijklmnopqrstuvwxyz
+acdefghijklmnoqrstuvwy
+bcdefghjklmnpqrstvxyz
+
+
+face
+ove
+
+
+bas*
+['f', 'c', 'a', 'e']
+f
+c
+a
+e
+['o', 'c', 'a', 'v', 'e']
+o
+c
+a
+v
+e
+[]
+['f', 'c', 'y', 'e']
+['a', 's', 'b', 'e']
+a
+s
+b
+e
+
+
+[]
+
+************************
+POSSIBLE CORRECT OUTPUT:
+************************
+Welcome to Hangman!
+I am thinking of a word that is 2 letters long.
+------
+You have 10 guesses left.
+Available letters: abcdefghijklmnopqrstuvwxyz
+Please guess a letter: h
+Good guess: h*
+------
+You have 10 guesses left.
+Available letters: abcdefgijklmnopqrstuvwxyz
+Please guess a letter: e
+Oops! That letter is not in my word: h*
+------
+You have 8 guesses left.
+Available letters: abcdfgijklmnopqrstuvwxyz
+Please guess a letter: i
+Good guess: hi
+------
+Congratulations, you won!
+Your total score for this game is: 22
+=============================================================
+
+
+=============================================================
+RESULTS FOR TEST CASE: test_play_game_short_fail
+WORD USED IN TEST: hi
+GUESSED LETTERS IN ORDER OF GUESS: ['n', 'e', 'i', 'm', 'u', 'k', 'l', 'p', 's']
+************************
+YOUR OUTPUT:
+************************
+
+
+[]
+
+************************
+POSSIBLE CORRECT OUTPUT:
+************************
+Welcome to hangman!
+I am thinking of a word that is 2 letters long.
+--------------
+You have 10 guesses left.
+Available Letters: abcdefghijklmnopqrstuvwxyz
+Please guess a letter: n
+Oops! That letter is not in my word: **
+--------------
+You have 9 guesses left.
+Available Letters: abcdefghijklmopqrstuvwxyz
+Please guess a letter: e
+Oops! That letter is not in my word: **
+--------------
+You have 7 guesses left.
+Available Letters: abcdfghijklmopqrstuvwxyz
+Please guess a letter: i
+Good guess: *i
+--------------
+You have 7 guesses left.
+Available Letters: abcdfghjklmopqrstuvwxyz
+Please guess a letter: m
+Oops! That letter is not in my word: *i
+--------------
+You have 6 guesses left.
+Available Letters: abcdfghjklopqrstuvwxyz
+Please guess a letter: u
+Oops! That letter is not in my word: *i
+--------------
+You have 4 guesses left.
+Available Letters: abcdfghjklopqrstvwxyz
+Please guess a letter: k
+Oops! That letter is not in my word: *i
+--------------
+You have 3 guesses left.
+Available Letters: abcdfghjlopqrstvwxyz
+Please guess a letter: l
+Oops! That letter is not in my word: *i
+--------------
+You have 2 guesses left.
+Available Letters: abcdfghjopqrstvwxyz
+Please guess a letter: p
+Oops! That letter is not in my word: *i
+--------------
+You have 1 guess left.
+Available Letters: abcdfghjoqrstvwxyz
+Please guess a letter: s
+Oops! That letter is not in my word: *i
+-------
+Sorry, you ran out of guesses. The word was hi
+=============================================================
+
+
+=============================================================
+RESULTS FOR TEST CASE: test_play_game_wildcard
+WORD USED IN TEST: wildcard
+GUESSED LETTERS IN ORDER OF GUESS: ['k', 'w', 'i', 'l', 'd', 'c', '!', '!']
+************************
+YOUR OUTPUT:
+************************
+
+
+[]
+
+************************
+POSSIBLE CORRECT OUTPUT:
+************************
+Welcome to hangman!
+I am thinking of a word that is 8 letters long
+------
+You have 10 guesses left
+Available letters: abcdefghijklmnopqrstuvwxyz
+Please guess a letter: k
+Oops! That letter is not in my word: ********
+------
+You have 9 guesses left
+Available letters: abcdefghijlmnopqrstuvwxyz
+Please guess a letter: w
+Good guess: w*******
+------
+You have 9 guesses left
+Available letters: abcdefghijlmnopqrstuvxyz
+Please guess a letter: i
+Good guess: wi******
+------
+You have 9 guesses left
+Available letters: abcdefghjlmnopqrstuvxyz
+Please guess a letter: l
+Good guess: wil*****
+------
+You have 9 guesses left
+Available letters: abcdefghjmnopqrstuvxyz
+Please guess a letter: d
+Good guess: wild***d
+------
+You have 9 guesses left
+Available letters: abcefghjmnopqrstuvxyz
+Please guess a letter: c
+Good guess: wildc**d
+------
+You have 9 guesses left
+Available letters: abefghjmnopqrstuvxyz
+Please guess a letter: !
+Letter revealed: a
+wildca+d
+------
+You have 6 guesses left
+Available letters: befghjmnopqrstuvxyz
+Please guess a letter: !
+Letter revealed: r
+Good guess: wildcard
+------
+Congratulations, you won!
+Your total score for this game is: 55
+
+=============================================================
+
+
+=============================================================
+RESULTS FOR TEST CASE: test_play_game_short
+WORD USED IN TEST: hi
+GUESSED LETTERS IN ORDER OF GUESS: ['h', 'e', 'i']
+************************
+YOUR OUTPUT:
+************************
+Loading word list from file...
+  55900 words loaded.
+efghijklmnopqrstuvwxyz
+acdefghijklmnoqrstuvwy
+bcdefghjklmnpqrstvxyz
+
+
+face
+ove
+
+
+bas*
+['f', 'c', 'a', 'e']
+f
+c
+a
+e
+['o', 'c', 'a', 'v', 'e']
+o
+c
+a
+v
+e
+[]
+['f', 'c', 'y', 'e']
+['a', 's', 'b', 'e']
+a
+s
+b
+e
+
+
+[]
+
+
+[]
+
+abcdfghijklmnopqrstuvwxyz
+['e']
+e
+
+abcdfghijklmnopqrstuvwxyz
+['e']
+e
+
+************************
+POSSIBLE CORRECT OUTPUT:
+************************
+Welcome to Hangman!
+I am thinking of a word that is 2 letters long.
+------
+You have 10 guesses left.
+Available letters: abcdefghijklmnopqrstuvwxyz
+Please guess a letter: h
+Good guess: h*
+------
+You have 10 guesses left.
+Available letters: abcdefgijklmnopqrstuvwxyz
+Please guess a letter: e
+Oops! That letter is not in my word: h*
+------
+You have 8 guesses left.
+Available letters: abcdfgijklmnopqrstuvwxyz
+Please guess a letter: i
+Good guess: hi
+------
+Congratulations, you won!
+Your total score for this game is: 22
+=============================================================
+
+
+=============================================================
+RESULTS FOR TEST CASE: test_play_game_short_fail
+WORD USED IN TEST: hi
+GUESSED LETTERS IN ORDER OF GUESS: ['n', 'e', 'i', 'm', 'u', 'k', 'l', 'p', 's']
+************************
+YOUR OUTPUT:
+************************
+
+
+[]
+
+abcdefghijklmopqrstuvwxyz
+['n']
+n
+
+abcdfghijklmopqrstuvwxyz
+['n', 'e']
+n
+e
+
+abcdfghijklmopqrstuvwxyz
+['n', 'e']
+n
+e
+
+abcdfghijklopqrstuvwxyz
+['n', 'e', 'm']
+n
+e
+m
+Try again
+
+************************
+POSSIBLE CORRECT OUTPUT:
+************************
+Welcome to hangman!
+I am thinking of a word that is 2 letters long.
+--------------
+You have 10 guesses left.
+Available Letters: abcdefghijklmnopqrstuvwxyz
+Please guess a letter: n
+Oops! That letter is not in my word: **
+--------------
+You have 9 guesses left.
+Available Letters: abcdefghijklmopqrstuvwxyz
+Please guess a letter: e
+Oops! That letter is not in my word: **
+--------------
+You have 7 guesses left.
+Available Letters: abcdfghijklmopqrstuvwxyz
+Please guess a letter: i
+Good guess: *i
+--------------
+You have 7 guesses left.
+Available Letters: abcdfghjklmopqrstuvwxyz
+Please guess a letter: m
+Oops! That letter is not in my word: *i
+--------------
+You have 6 guesses left.
+Available Letters: abcdfghjklopqrstuvwxyz
+Please guess a letter: u
+Oops! That letter is not in my word: *i
+--------------
+You have 4 guesses left.
+Available Letters: abcdfghjklopqrstvwxyz
+Please guess a letter: k
+Oops! That letter is not in my word: *i
+--------------
+You have 3 guesses left.
+Available Letters: abcdfghjlopqrstvwxyz
+Please guess a letter: l
+Oops! That letter is not in my word: *i
+--------------
+You have 2 guesses left.
+Available Letters: abcdfghjopqrstvwxyz
+Please guess a letter: p
+Oops! That letter is not in my word: *i
+--------------
+You have 1 guess left.
+Available Letters: abcdfghjoqrstvwxyz
+Please guess a letter: s
+Oops! That letter is not in my word: *i
+-------
+Sorry, you ran out of guesses. The word was hi
+=============================================================
+
+
+=============================================================
+RESULTS FOR TEST CASE: test_play_game_wildcard
+WORD USED IN TEST: wildcard
+GUESSED LETTERS IN ORDER OF GUESS: ['k', 'w', 'i', 'l', 'd', 'c', '!', '!']
+************************
+YOUR OUTPUT:
+************************
+
+
+[]
+
+abcdefghijlmnopqrstuvwxyz
+['k']
+k
+
+abcdefghijlmnopqrstuvwxyz
+['k']
+k
+
+abcdefghijlmnopqrstuvwxyz
+['k']
+k
+
+abcdefghijlmnopqrstuvwxyz
+['k']
+k
+
+abcdefghijlmnopqrstuvwxyz
+['k']
+k
+
+abcdefghijlmnopqrstuvwxyz
+['k']
+k
+
+abcdefghijlmnopqrstuvwxyz
+['k']
+k
+
+abcdefghijlmnopqrstuvwxyz
+['k']
+k
+
+************************
+POSSIBLE CORRECT OUTPUT:
+************************
+Welcome to hangman!
+I am thinking of a word that is 8 letters long
+------
+You have 10 guesses left
+Available letters: abcdefghijklmnopqrstuvwxyz
+Please guess a letter: k
+Oops! That letter is not in my word: ********
+------
+You have 9 guesses left
+Available letters: abcdefghijlmnopqrstuvwxyz
+Please guess a letter: w
+Good guess: w*******
+------
+You have 9 guesses left
+Available letters: abcdefghijlmnopqrstuvxyz
+Please guess a letter: i
+Good guess: wi******
+------
+You have 9 guesses left
+Available letters: abcdefghjlmnopqrstuvxyz
+Please guess a letter: l
+Good guess: wil*****
+------
+You have 9 guesses left
+Available letters: abcdefghjmnopqrstuvxyz
+Please guess a letter: d
+Good guess: wild***d
+------
+You have 9 guesses left
+Available letters: abcefghjmnopqrstuvxyz
+Please guess a letter: c
+Good guess: wildc**d
+------
+You have 9 guesses left
+Available letters: abefghjmnopqrstuvxyz
+Please guess a letter: !
+Letter revealed: a
+wildca+d
+------
+You have 6 guesses left
+Available letters: befghjmnopqrstuvxyz
+Please guess a letter: !
+Letter revealed: r
+Good guess: wildcard
+------
+Congratulations, you won!
+Your total score for this game is: 55
+
+=============================================================
+
+
+=============================================================
+RESULTS FOR TEST CASE: test_play_game_short
+WORD USED IN TEST: hi
+GUESSED LETTERS IN ORDER OF GUESS: ['h', 'e', 'i']
+************************
+YOUR OUTPUT:
+************************
+Loading word list from file...
+  55900 words loaded.
+efghijklmnopqrstuvwxyz
+acdefghijklmnoqrstuvwy
+bcdefghjklmnpqrstvxyz
+
+
+face
+*ove*
+
+
+bas*
+['f', 'c', 'a', 'e']
+f
+c
+a
+e
+['o', 'c', 'a', 'v', 'e']
+o
+c
+a
+v
+e
+[]
+['f', 'c', 'y', 'e']
+['a', 's', 'b', 'e']
+a
+s
+b
+e
+
+
+[]
+Hangman starts. The secret word has 2 characters.
+Available letters: . Word progress : .
+-----
+
+
+[]
+Hangman starts. The secret word has 2 characters.
+Available letters: . Word progress : .
+-----
+
+
+[]
+Hangman starts. The secret word has 2 characters.
+Available letters: . Word progress : .
+-----
+
+
+[]
+Hangman starts. The secret word has 2 characters.
+Available letters: . Word progress : .
+
+************************
+POSSIBLE CORRECT OUTPUT:
+************************
+Welcome to Hangman!
+I am thinking of a word that is 2 letters long.
+------
+You have 10 guesses left.
+Available letters: abcdefghijklmnopqrstuvwxyz
+Please guess a letter: h
+Good guess: h*
+------
+You have 10 guesses left.
+Available letters: abcdefgijklmnopqrstuvwxyz
+Please guess a letter: e
+Oops! That letter is not in my word: h*
+------
+You have 8 guesses left.
+Available letters: abcdfgijklmnopqrstuvwxyz
+Please guess a letter: i
+Good guess: hi
+------
+Congratulations, you won!
+Your total score for this game is: 22
+=============================================================
+
+
+=============================================================
+RESULTS FOR TEST CASE: test_play_game_short_fail
+WORD USED IN TEST: hi
+GUESSED LETTERS IN ORDER OF GUESS: ['n', 'e', 'i', 'm', 'u', 'k', 'l', 'p', 's']
+************************
+YOUR OUTPUT:
+************************
+
+
+[]
+Hangman starts. The secret word has 2 characters.
+Available letters: . Word progress : .
+-----
+
+
+[]
+Hangman starts. The secret word has 2 characters.
+Available letters: . Word progress : .
+-----
+
+
+[]
+Hangman starts. The secret word has 2 characters.
+Available letters: . Word progress : .
+-----
+
+
+[]
+Hangman starts. The secret word has 2 characters.
+Available letters: . Word progress : .
+-----
+
+
+[]
+Hangman starts. The secret word has 2 characters.
+Available letters: . Word progress : .
+-----
+
+
+[]
+Hangman starts. The secret word has 2 characters.
+Available letters: . Word progress : .
+-----
+
+
+[]
+Hangman starts. The secret word has 2 characters.
+Available letters: . Word progress : .
+-----
+
+
+[]
+Hangman starts. The secret word has 2 characters.
+Available letters: . Word progress : .
+-----
+
+
+[]
+Hangman starts. The secret word has 2 characters.
+Available letters: . Word progress : .
+-----
+
+
+[]
+Hangman starts. The secret word has 2 characters.
+Available letters: . Word progress : .
+
+************************
+POSSIBLE CORRECT OUTPUT:
+************************
+Welcome to hangman!
+I am thinking of a word that is 2 letters long.
+--------------
+You have 10 guesses left.
+Available Letters: abcdefghijklmnopqrstuvwxyz
+Please guess a letter: n
+Oops! That letter is not in my word: **
+--------------
+You have 9 guesses left.
+Available Letters: abcdefghijklmopqrstuvwxyz
+Please guess a letter: e
+Oops! That letter is not in my word: **
+--------------
+You have 7 guesses left.
+Available Letters: abcdfghijklmopqrstuvwxyz
+Please guess a letter: i
+Good guess: *i
+--------------
+You have 7 guesses left.
+Available Letters: abcdfghjklmopqrstuvwxyz
+Please guess a letter: m
+Oops! That letter is not in my word: *i
+--------------
+You have 6 guesses left.
+Available Letters: abcdfghjklopqrstuvwxyz
+Please guess a letter: u
+Oops! That letter is not in my word: *i
+--------------
+You have 4 guesses left.
+Available Letters: abcdfghjklopqrstvwxyz
+Please guess a letter: k
+Oops! That letter is not in my word: *i
+--------------
+You have 3 guesses left.
+Available Letters: abcdfghjlopqrstvwxyz
+Please guess a letter: l
+Oops! That letter is not in my word: *i
+--------------
+You have 2 guesses left.
+Available Letters: abcdfghjopqrstvwxyz
+Please guess a letter: p
+Oops! That letter is not in my word: *i
+--------------
+You have 1 guess left.
+Available Letters: abcdfghjoqrstvwxyz
+Please guess a letter: s
+Oops! That letter is not in my word: *i
+-------
+Sorry, you ran out of guesses. The word was hi
+=============================================================
+
+
+=============================================================
+RESULTS FOR TEST CASE: test_play_game_wildcard
+WORD USED IN TEST: wildcard
+GUESSED LETTERS IN ORDER OF GUESS: ['k', 'w', 'i', 'l', 'd', 'c', '!', '!']
+************************
+YOUR OUTPUT:
+************************
+
+
+[]
+Hangman starts. The secret word has 8 characters.
+Available letters: . Word progress : .
+-----
+********
+abcdefghijlmnopqrstuvwxyz
+['k']
+k
+Hangman starts. The secret word has 8 characters.
+Available letters: abcdefghijlmnopqrstuvwxyz. Word progress : ********.
+-----
+********
+abcdefghijlmnopqrstuvwxyz
+['k']
+k
+Hangman starts. The secret word has 8 characters.
+Available letters: abcdefghijlmnopqrstuvwxyz. Word progress : ********.
+-----
+********
+abcdefghijlmnopqrstuvwxyz
+['k']
+k
+Hangman starts. The secret word has 8 characters.
+Available letters: abcdefghijlmnopqrstuvwxyz. Word progress : ********.
+-----
+********
+abcdefghijlmnopqrstuvwxyz
+['k']
+k
+Hangman starts. The secret word has 8 characters.
+Available letters: abcdefghijlmnopqrstuvwxyz. Word progress : ********.
+-----
+********
+abcdefghijlmnopqrstuvwxyz
+['k']
+k
+Hangman starts. The secret word has 8 characters.
+Available letters: abcdefghijlmnopqrstuvwxyz. Word progress : ********.
+-----
+********
+abcdefghijlmnopqrstuvwxyz
+['k']
+k
+Hangman starts. The secret word has 8 characters.
+Available letters: abcdefghijlmnopqrstuvwxyz. Word progress : ********.
+-----
+********
+abcdefghijlmnopqrstuvwxyz
+['k']
+k
+Hangman starts. The secret word has 8 characters.
+Available letters: abcdefghijlmnopqrstuvwxyz. Word progress : ********.
+-----
+********
+abcdefghijlmnopqrstuvwxyz
+['k']
+k
+Hangman starts. The secret word has 8 characters.
+Available letters: abcdefghijlmnopqrstuvwxyz. Word progress : ********.
+
+************************
+POSSIBLE CORRECT OUTPUT:
+************************
+Welcome to hangman!
+I am thinking of a word that is 8 letters long
+------
+You have 10 guesses left
+Available letters: abcdefghijklmnopqrstuvwxyz
+Please guess a letter: k
+Oops! That letter is not in my word: ********
+------
+You have 9 guesses left
+Available letters: abcdefghijlmnopqrstuvwxyz
+Please guess a letter: w
+Good guess: w*******
+------
+You have 9 guesses left
+Available letters: abcdefghijlmnopqrstuvxyz
+Please guess a letter: i
+Good guess: wi******
+------
+You have 9 guesses left
+Available letters: abcdefghjlmnopqrstuvxyz
+Please guess a letter: l
+Good guess: wil*****
+------
+You have 9 guesses left
+Available letters: abcdefghjmnopqrstuvxyz
+Please guess a letter: d
+Good guess: wild***d
+------
+You have 9 guesses left
+Available letters: abcefghjmnopqrstuvxyz
+Please guess a letter: c
+Good guess: wildc**d
+------
+You have 9 guesses left
+Available letters: abefghjmnopqrstuvxyz
+Please guess a letter: !
+Letter revealed: a
+wildca+d
+------
+You have 6 guesses left
+Available letters: befghjmnopqrstuvxyz
+Please guess a letter: !
+Letter revealed: r
+Good guess: wildcard
+------
+Congratulations, you won!
+Your total score for this game is: 55
+
+=============================================================
+
+
+=============================================================
+RESULTS FOR TEST CASE: test_play_game_short
+WORD USED IN TEST: hi
+GUESSED LETTERS IN ORDER OF GUESS: ['h', 'e', 'i']
+************************
+YOUR OUTPUT:
+************************
+Loading word list from file...
+  55900 words loaded.
+efghijklmnopqrstuvwxyz
+acdefghijklmnoqrstuvwy
+bcdefghjklmnpqrstvxyz
+
+
+face
+*ove*
+
+
+bas*
+['f', 'c', 'a', 'e']
+f
+c
+a
+e
+['o', 'c', 'a', 'v', 'e']
+o
+c
+a
+v
+e
+[]
+['f', 'c', 'y', 'e']
+['a', 's', 'b', 'e']
+a
+s
+b
+e
+[]
+
+
+Hangman starts. The secret word has 2 characters.
+-----
+
+
+Hangman starts. The secret word has 2 characters.
+-----
+
+
+Hangman starts. The secret word has 2 characters.
+-----
+
+
+Hangman starts. The secret word has 2 characters.
+
+************************
+POSSIBLE CORRECT OUTPUT:
+************************
+Welcome to Hangman!
+I am thinking of a word that is 2 letters long.
+------
+You have 10 guesses left.
+Available letters: abcdefghijklmnopqrstuvwxyz
+Please guess a letter: h
+Good guess: h*
+------
+You have 10 guesses left.
+Available letters: abcdefgijklmnopqrstuvwxyz
+Please guess a letter: e
+Oops! That letter is not in my word: h*
+------
+You have 8 guesses left.
+Available letters: abcdfgijklmnopqrstuvwxyz
+Please guess a letter: i
+Good guess: hi
+------
+Congratulations, you won!
+Your total score for this game is: 22
+=============================================================
+
+
+=============================================================
+RESULTS FOR TEST CASE: test_play_game_short_fail
+WORD USED IN TEST: hi
+GUESSED LETTERS IN ORDER OF GUESS: ['n', 'e', 'i', 'm', 'u', 'k', 'l', 'p', 's']
+************************
+YOUR OUTPUT:
+************************
+[]
+
+
+Hangman starts. The secret word has 2 characters.
+-----
+
+
+Hangman starts. The secret word has 2 characters.
+-----
+
+
+Hangman starts. The secret word has 2 characters.
+-----
+
+
+Hangman starts. The secret word has 2 characters.
+-----
+
+
+Hangman starts. The secret word has 2 characters.
+-----
+
+
+Hangman starts. The secret word has 2 characters.
+-----
+
+
+Hangman starts. The secret word has 2 characters.
+-----
+
+
+Hangman starts. The secret word has 2 characters.
+-----
+
+
+Hangman starts. The secret word has 2 characters.
+-----
+
+
+Hangman starts. The secret word has 2 characters.
+
+************************
+POSSIBLE CORRECT OUTPUT:
+************************
+Welcome to hangman!
+I am thinking of a word that is 2 letters long.
+--------------
+You have 10 guesses left.
+Available Letters: abcdefghijklmnopqrstuvwxyz
+Please guess a letter: n
+Oops! That letter is not in my word: **
+--------------
+You have 9 guesses left.
+Available Letters: abcdefghijklmopqrstuvwxyz
+Please guess a letter: e
+Oops! That letter is not in my word: **
+--------------
+You have 7 guesses left.
+Available Letters: abcdfghijklmopqrstuvwxyz
+Please guess a letter: i
+Good guess: *i
+--------------
+You have 7 guesses left.
+Available Letters: abcdfghjklmopqrstuvwxyz
+Please guess a letter: m
+Oops! That letter is not in my word: *i
+--------------
+You have 6 guesses left.
+Available Letters: abcdfghjklopqrstuvwxyz
+Please guess a letter: u
+Oops! That letter is not in my word: *i
+--------------
+You have 4 guesses left.
+Available Letters: abcdfghjklopqrstvwxyz
+Please guess a letter: k
+Oops! That letter is not in my word: *i
+--------------
+You have 3 guesses left.
+Available Letters: abcdfghjlopqrstvwxyz
+Please guess a letter: l
+Oops! That letter is not in my word: *i
+--------------
+You have 2 guesses left.
+Available Letters: abcdfghjopqrstvwxyz
+Please guess a letter: p
+Oops! That letter is not in my word: *i
+--------------
+You have 1 guess left.
+Available Letters: abcdfghjoqrstvwxyz
+Please guess a letter: s
+Oops! That letter is not in my word: *i
+-------
+Sorry, you ran out of guesses. The word was hi
+=============================================================
+
+
+=============================================================
+RESULTS FOR TEST CASE: test_play_game_wildcard
+WORD USED IN TEST: wildcard
+GUESSED LETTERS IN ORDER OF GUESS: ['k', 'w', 'i', 'l', 'd', 'c', '!', '!']
+************************
+YOUR OUTPUT:
+************************
+[]
+
+
+Hangman starts. The secret word has 8 characters.
+-----
+abcdefghijlmnopqrstuvwxyz
+********
+Hangman starts. The secret word has 8 characters.
+-----
+abcdefghijlmnopqrstuvwxyz
+********
+Hangman starts. The secret word has 8 characters.
+-----
+abcdefghijlmnopqrstuvwxyz
+********
+Hangman starts. The secret word has 8 characters.
+-----
+abcdefghijlmnopqrstuvwxyz
+********
+Hangman starts. The secret word has 8 characters.
+-----
+abcdefghijlmnopqrstuvwxyz
+********
+Hangman starts. The secret word has 8 characters.
+-----
+abcdefghijlmnopqrstuvwxyz
+********
+Hangman starts. The secret word has 8 characters.
+-----
+abcdefghijlmnopqrstuvwxyz
+********
+Hangman starts. The secret word has 8 characters.
+-----
+abcdefghijlmnopqrstuvwxyz
+********
+Hangman starts. The secret word has 8 characters.
+
+************************
+POSSIBLE CORRECT OUTPUT:
+************************
+Welcome to hangman!
+I am thinking of a word that is 8 letters long
+------
+You have 10 guesses left
+Available letters: abcdefghijklmnopqrstuvwxyz
+Please guess a letter: k
+Oops! That letter is not in my word: ********
+------
+You have 9 guesses left
+Available letters: abcdefghijlmnopqrstuvwxyz
+Please guess a letter: w
+Good guess: w*******
+------
+You have 9 guesses left
+Available letters: abcdefghijlmnopqrstuvxyz
+Please guess a letter: i
+Good guess: wi******
+------
+You have 9 guesses left
+Available letters: abcdefghjlmnopqrstuvxyz
+Please guess a letter: l
+Good guess: wil*****
+------
+You have 9 guesses left
+Available letters: abcdefghjmnopqrstuvxyz
+Please guess a letter: d
+Good guess: wild***d
+------
+You have 9 guesses left
+Available letters: abcefghjmnopqrstuvxyz
+Please guess a letter: c
+Good guess: wildc**d
+------
+You have 9 guesses left
+Available letters: abefghjmnopqrstuvxyz
+Please guess a letter: !
+Letter revealed: a
+wildca+d
+------
+You have 6 guesses left
+Available letters: befghjmnopqrstuvxyz
+Please guess a letter: !
+Letter revealed: r
+Good guess: wildcard
+------
+Congratulations, you won!
+Your total score for this game is: 55
+
+=============================================================
+
+
+=============================================================
+RESULTS FOR TEST CASE: test_play_game_short
+WORD USED IN TEST: hi
+GUESSED LETTERS IN ORDER OF GUESS: ['h', 'e', 'i']
+************************
+YOUR OUTPUT:
+************************
+Loading word list from file...
+  55900 words loaded.
+efghijklmnopqrstuvwxyz
+acdefghijklmnoqrstuvwy
+bcdefghjklmnpqrstvxyz
+
+
+face
+*ove*
+
+
+bas*
+['f', 'c', 'a', 'e']
+f
+c
+a
+e
+['o', 'c', 'a', 'v', 'e']
+o
+c
+a
+v
+e
+[]
+['f', 'c', 'y', 'e']
+['a', 's', 'b', 'e']
+a
+s
+b
+e
+[]
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdefgijklmnopqrstuvwxyz
+h*
+Good guess: h*
+Try again
+['h']
+h
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdfgijklmnopqrstuvwxyz
+h*
+Your letter is not in the word: h*
+Try again
+['h', 'e']
+h
+e
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdfgjklmnopqrstuvwxyz
+hi
+Good guess: hi
+Try again
+['h', 'e', 'i']
+h
+e
+i
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+
+************************
+POSSIBLE CORRECT OUTPUT:
+************************
+Welcome to Hangman!
+I am thinking of a word that is 2 letters long.
+------
+You have 10 guesses left.
+Available letters: abcdefghijklmnopqrstuvwxyz
+Please guess a letter: h
+Good guess: h*
+------
+You have 10 guesses left.
+Available letters: abcdefgijklmnopqrstuvwxyz
+Please guess a letter: e
+Oops! That letter is not in my word: h*
+------
+You have 8 guesses left.
+Available letters: abcdfgijklmnopqrstuvwxyz
+Please guess a letter: i
+Good guess: hi
+------
+Congratulations, you won!
+Your total score for this game is: 22
+=============================================================
+
+
+=============================================================
+RESULTS FOR TEST CASE: test_play_game_short_fail
+WORD USED IN TEST: hi
+GUESSED LETTERS IN ORDER OF GUESS: ['n', 'e', 'i', 'm', 'u', 'k', 'l', 'p', 's']
+************************
+YOUR OUTPUT:
+************************
+[]
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdefghijklmopqrstuvwxyz
+**
+Your letter is not in the word: **
+Try again
+['n']
+n
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdfghijklmopqrstuvwxyz
+**
+Your letter is not in the word: **
+Try again
+['n', 'e']
+n
+e
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdfghjklmopqrstuvwxyz
+*i
+Good guess: *i
+Try again
+['n', 'e', 'i']
+n
+e
+i
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdfghjklopqrstuvwxyz
+*i
+Your letter is not in the word: *i
+Try again
+['n', 'e', 'i', 'm']
+n
+e
+i
+m
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdfghjklopqrstvwxyz
+*i
+Your letter is not in the word: *i
+Try again
+['n', 'e', 'i', 'm', 'u']
+n
+e
+i
+m
+u
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdfghjlopqrstvwxyz
+*i
+Your letter is not in the word: *i
+Try again
+['n', 'e', 'i', 'm', 'u', 'k']
+n
+e
+i
+m
+u
+k
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdfghjopqrstvwxyz
+*i
+Your letter is not in the word: *i
+Try again
+
+************************
+POSSIBLE CORRECT OUTPUT:
+************************
+Welcome to hangman!
+I am thinking of a word that is 2 letters long.
+--------------
+You have 10 guesses left.
+Available Letters: abcdefghijklmnopqrstuvwxyz
+Please guess a letter: n
+Oops! That letter is not in my word: **
+--------------
+You have 9 guesses left.
+Available Letters: abcdefghijklmopqrstuvwxyz
+Please guess a letter: e
+Oops! That letter is not in my word: **
+--------------
+You have 7 guesses left.
+Available Letters: abcdfghijklmopqrstuvwxyz
+Please guess a letter: i
+Good guess: *i
+--------------
+You have 7 guesses left.
+Available Letters: abcdfghjklmopqrstuvwxyz
+Please guess a letter: m
+Oops! That letter is not in my word: *i
+--------------
+You have 6 guesses left.
+Available Letters: abcdfghjklopqrstuvwxyz
+Please guess a letter: u
+Oops! That letter is not in my word: *i
+--------------
+You have 4 guesses left.
+Available Letters: abcdfghjklopqrstvwxyz
+Please guess a letter: k
+Oops! That letter is not in my word: *i
+--------------
+You have 3 guesses left.
+Available Letters: abcdfghjlopqrstvwxyz
+Please guess a letter: l
+Oops! That letter is not in my word: *i
+--------------
+You have 2 guesses left.
+Available Letters: abcdfghjopqrstvwxyz
+Please guess a letter: p
+Oops! That letter is not in my word: *i
+--------------
+You have 1 guess left.
+Available Letters: abcdfghjoqrstvwxyz
+Please guess a letter: s
+Oops! That letter is not in my word: *i
+-------
+Sorry, you ran out of guesses. The word was hi
+=============================================================
+
+
+=============================================================
+RESULTS FOR TEST CASE: test_play_game_wildcard
+WORD USED IN TEST: wildcard
+GUESSED LETTERS IN ORDER OF GUESS: ['k', 'w', 'i', 'l', 'd', 'c', '!', '!']
+************************
+YOUR OUTPUT:
+************************
+[]
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+abcdefghijlmnopqrstuvwxyz
+********
+One letter in the word is w.
+One letter in the word is w.
+One letter in the word is w.
+One letter in the word is w.
+One letter in the word is w.
+One letter in the word is w.
+One letter in the word is w.
+One letter in the word is w.
+Try again
+['k', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w']
+k
+w
+w
+w
+w
+w
+w
+w
+w
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+abcdefghijlmnopqrstuvxyz
+w*******
+One letter in the word is i.
+One letter in the word is i.
+One letter in the word is i.
+One letter in the word is i.
+One letter in the word is i.
+One letter in the word is i.
+One letter in the word is i.
+You won
+['k', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'i', 'i', 'i', 'i', 'i', 'i', 'i']
+k
+w
+w
+w
+w
+w
+w
+w
+w
+w
+i
+i
+i
+i
+i
+i
+i
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+abcdefghjlmnopqrstuvxyz
+wi******
+One letter in the word is l.
+One letter in the word is l.
+One letter in the word is l.
+One letter in the word is l.
+One letter in the word is l.
+One letter in the word is l.
+Try again
+['k', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'l', 'l', 'l', 'l', 'l', 'l']
+k
+w
+w
+w
+w
+w
+w
+w
+w
+w
+i
+i
+i
+i
+i
+i
+i
+i
+l
+l
+l
+l
+l
+l
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+abcdefghjmnopqrstuvxyz
+wil*****
+One letter in the word is d.
+One letter in the word is d.
+One letter in the word is d.
+One letter in the word is d.
+One letter in the word is d.
+Try again
+['k', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'l', 'l', 'l', 'l', 'l', 'l', 'l', 'd', 'd', 'd', 'd', 'd']
+k
+w
+w
+w
+w
+w
+w
+w
+w
+w
+i
+i
+i
+i
+i
+i
+i
+i
+l
+l
+l
+l
+l
+l
+l
+d
+d
+d
+d
+d
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+abcefghjmnopqrstuvxyz
+wild****
+One letter in the word is c.
+One letter in the word is c.
+One letter in the word is c.
+One letter in the word is c.
+Try again
+['k', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'l', 'l', 'l', 'l', 'l', 'l', 'l', 'd', 'd', 'd', 'd', 'd', 'd', 'c', 'c', 'c', 'c']
+k
+w
+w
+w
+w
+w
+w
+w
+w
+w
+i
+i
+i
+i
+i
+i
+i
+i
+l
+l
+l
+l
+l
+l
+l
+d
+d
+d
+d
+d
+d
+c
+c
+c
+c
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+abefghjmnopqrstuvxyz
+wildc***
+One letter in the word is a.
+One letter in the word is a.
+One letter in the word is a.
+Try again
+['k', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'l', 'l', 'l', 'l', 'l', 'l', 'l', 'd', 'd', 'd', 'd', 'd', 'd', 'c', 'c', 'c', 'c', 'c', 'a', 'a', 'a']
+k
+w
+w
+w
+w
+w
+w
+w
+w
+w
+i
+i
+i
+i
+i
+i
+i
+i
+l
+l
+l
+l
+l
+l
+l
+d
+d
+d
+d
+d
+d
+c
+c
+c
+c
+c
+a
+a
+a
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+befghjmnopqrstuvxyz
+wildca**
+One letter in the word is r.
+One letter in the word is r.
+Try again
+['k', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'l', 'l', 'l', 'l', 'l', 'l', 'l', 'd', 'd', 'd', 'd', 'd', 'd', 'c', 'c', 'c', 'c', 'c', 'a', 'a', 'a', '!', 'r', 'r']
+k
+w
+w
+w
+w
+w
+w
+w
+w
+w
+i
+i
+i
+i
+i
+i
+i
+i
+l
+l
+l
+l
+l
+l
+l
+d
+d
+d
+d
+d
+d
+c
+c
+c
+c
+c
+a
+a
+a
+!
+r
+r
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+befghjmnopqstuvxyz
+wildcar*
+One letter in the word is d.
+Try again
+['k', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'l', 'l', 'l', 'l', 'l', 'l', 'l', 'd', 'd', 'd', 'd', 'd', 'd', 'c', 'c', 'c', 'c', 'c', 'a', 'a', 'a', '!', 'r', 'r', '!', 'd']
+k
+w
+w
+w
+w
+w
+w
+w
+w
+w
+i
+i
+i
+i
+i
+i
+i
+i
+l
+l
+l
+l
+l
+l
+l
+d
+d
+d
+d
+d
+d
+c
+c
+c
+c
+c
+a
+a
+a
+!
+r
+r
+!
+d
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+
+************************
+POSSIBLE CORRECT OUTPUT:
+************************
+Welcome to hangman!
+I am thinking of a word that is 8 letters long
+------
+You have 10 guesses left
+Available letters: abcdefghijklmnopqrstuvwxyz
+Please guess a letter: k
+Oops! That letter is not in my word: ********
+------
+You have 9 guesses left
+Available letters: abcdefghijlmnopqrstuvwxyz
+Please guess a letter: w
+Good guess: w*******
+------
+You have 9 guesses left
+Available letters: abcdefghijlmnopqrstuvxyz
+Please guess a letter: i
+Good guess: wi******
+------
+You have 9 guesses left
+Available letters: abcdefghjlmnopqrstuvxyz
+Please guess a letter: l
+Good guess: wil*****
+------
+You have 9 guesses left
+Available letters: abcdefghjmnopqrstuvxyz
+Please guess a letter: d
+Good guess: wild***d
+------
+You have 9 guesses left
+Available letters: abcefghjmnopqrstuvxyz
+Please guess a letter: c
+Good guess: wildc**d
+------
+You have 9 guesses left
+Available letters: abefghjmnopqrstuvxyz
+Please guess a letter: !
+Letter revealed: a
+wildca+d
+------
+You have 6 guesses left
+Available letters: befghjmnopqrstuvxyz
+Please guess a letter: !
+Letter revealed: r
+Good guess: wildcard
+------
+Congratulations, you won!
+Your total score for this game is: 55
+
+=============================================================
+
+
+=============================================================
+RESULTS FOR TEST CASE: test_play_game_short
+WORD USED IN TEST: hi
+GUESSED LETTERS IN ORDER OF GUESS: ['h', 'e', 'i']
+************************
+YOUR OUTPUT:
+************************
+Loading word list from file...
+  55900 words loaded.
+efghijklmnopqrstuvwxyz
+acdefghijklmnoqrstuvwy
+bcdefghjklmnpqrstvxyz
+
+
+face
+*ove*
+
+
+bas*
+['f', 'c', 'a', 'e']
+f
+c
+a
+e
+['o', 'c', 'a', 'v', 'e']
+o
+c
+a
+v
+e
+[]
+['f', 'c', 'y', 'e']
+['a', 's', 'b', 'e']
+a
+s
+b
+e
+[]
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdefgijklmnopqrstuvwxyz
+h*
+Good guess: h*
+Try again
+['h']
+h
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdfgijklmnopqrstuvwxyz
+h*
+Your letter is not in the word: h*
+Try again
+['h', 'e']
+h
+e
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdfgjklmnopqrstuvwxyz
+hi
+Good guess: hi
+Try again
+['h', 'e', 'i']
+h
+e
+i
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+
+************************
+POSSIBLE CORRECT OUTPUT:
+************************
+Welcome to Hangman!
+I am thinking of a word that is 2 letters long.
+------
+You have 10 guesses left.
+Available letters: abcdefghijklmnopqrstuvwxyz
+Please guess a letter: h
+Good guess: h*
+------
+You have 10 guesses left.
+Available letters: abcdefgijklmnopqrstuvwxyz
+Please guess a letter: e
+Oops! That letter is not in my word: h*
+------
+You have 8 guesses left.
+Available letters: abcdfgijklmnopqrstuvwxyz
+Please guess a letter: i
+Good guess: hi
+------
+Congratulations, you won!
+Your total score for this game is: 22
+=============================================================
+
+
+=============================================================
+RESULTS FOR TEST CASE: test_play_game_short_fail
+WORD USED IN TEST: hi
+GUESSED LETTERS IN ORDER OF GUESS: ['n', 'e', 'i', 'm', 'u', 'k', 'l', 'p', 's']
+************************
+YOUR OUTPUT:
+************************
+[]
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdefghijklmopqrstuvwxyz
+**
+Your letter is not in the word: **
+Try again
+['n']
+n
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdfghijklmopqrstuvwxyz
+**
+Your letter is not in the word: **
+Try again
+['n', 'e']
+n
+e
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdfghjklmopqrstuvwxyz
+*i
+Good guess: *i
+Try again
+['n', 'e', 'i']
+n
+e
+i
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdfghjklopqrstuvwxyz
+*i
+Your letter is not in the word: *i
+Try again
+['n', 'e', 'i', 'm']
+n
+e
+i
+m
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdfghjklopqrstvwxyz
+*i
+Your letter is not in the word: *i
+Try again
+['n', 'e', 'i', 'm', 'u']
+n
+e
+i
+m
+u
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdfghjlopqrstvwxyz
+*i
+Your letter is not in the word: *i
+Try again
+['n', 'e', 'i', 'm', 'u', 'k']
+n
+e
+i
+m
+u
+k
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdfghjopqrstvwxyz
+*i
+Your letter is not in the word: *i
+Try again
+
+************************
+POSSIBLE CORRECT OUTPUT:
+************************
+Welcome to hangman!
+I am thinking of a word that is 2 letters long.
+--------------
+You have 10 guesses left.
+Available Letters: abcdefghijklmnopqrstuvwxyz
+Please guess a letter: n
+Oops! That letter is not in my word: **
+--------------
+You have 9 guesses left.
+Available Letters: abcdefghijklmopqrstuvwxyz
+Please guess a letter: e
+Oops! That letter is not in my word: **
+--------------
+You have 7 guesses left.
+Available Letters: abcdfghijklmopqrstuvwxyz
+Please guess a letter: i
+Good guess: *i
+--------------
+You have 7 guesses left.
+Available Letters: abcdfghjklmopqrstuvwxyz
+Please guess a letter: m
+Oops! That letter is not in my word: *i
+--------------
+You have 6 guesses left.
+Available Letters: abcdfghjklopqrstuvwxyz
+Please guess a letter: u
+Oops! That letter is not in my word: *i
+--------------
+You have 4 guesses left.
+Available Letters: abcdfghjklopqrstvwxyz
+Please guess a letter: k
+Oops! That letter is not in my word: *i
+--------------
+You have 3 guesses left.
+Available Letters: abcdfghjlopqrstvwxyz
+Please guess a letter: l
+Oops! That letter is not in my word: *i
+--------------
+You have 2 guesses left.
+Available Letters: abcdfghjopqrstvwxyz
+Please guess a letter: p
+Oops! That letter is not in my word: *i
+--------------
+You have 1 guess left.
+Available Letters: abcdfghjoqrstvwxyz
+Please guess a letter: s
+Oops! That letter is not in my word: *i
+-------
+Sorry, you ran out of guesses. The word was hi
+=============================================================
+
+
+=============================================================
+RESULTS FOR TEST CASE: test_play_game_wildcard
+WORD USED IN TEST: wildcard
+GUESSED LETTERS IN ORDER OF GUESS: ['k', 'w', 'i', 'l', 'd', 'c', '!', '!']
+************************
+YOUR OUTPUT:
+************************
+[]
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+abcdefghijlmnopqrstuvwxyz
+********
+One letter in the word is w.
+One letter in the word is w.
+One letter in the word is w.
+One letter in the word is w.
+One letter in the word is w.
+One letter in the word is w.
+One letter in the word is w.
+One letter in the word is w.
+Try again
+['k', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w']
+k
+w
+w
+w
+w
+w
+w
+w
+w
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+abcdefghijlmnopqrstuvxyz
+w*******
+One letter in the word is i.
+One letter in the word is i.
+One letter in the word is i.
+One letter in the word is i.
+One letter in the word is i.
+One letter in the word is i.
+One letter in the word is i.
+You won
+['k', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'i', 'i', 'i', 'i', 'i', 'i', 'i']
+k
+w
+w
+w
+w
+w
+w
+w
+w
+w
+i
+i
+i
+i
+i
+i
+i
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+abcdefghjlmnopqrstuvxyz
+wi******
+One letter in the word is l.
+One letter in the word is l.
+One letter in the word is l.
+One letter in the word is l.
+One letter in the word is l.
+One letter in the word is l.
+Try again
+['k', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'l', 'l', 'l', 'l', 'l', 'l']
+k
+w
+w
+w
+w
+w
+w
+w
+w
+w
+i
+i
+i
+i
+i
+i
+i
+i
+l
+l
+l
+l
+l
+l
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+abcdefghjmnopqrstuvxyz
+wil*****
+One letter in the word is d.
+One letter in the word is d.
+One letter in the word is d.
+One letter in the word is d.
+One letter in the word is d.
+Try again
+['k', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'l', 'l', 'l', 'l', 'l', 'l', 'l', 'd', 'd', 'd', 'd', 'd']
+k
+w
+w
+w
+w
+w
+w
+w
+w
+w
+i
+i
+i
+i
+i
+i
+i
+i
+l
+l
+l
+l
+l
+l
+l
+d
+d
+d
+d
+d
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+abcefghjmnopqrstuvxyz
+wild****
+One letter in the word is c.
+One letter in the word is c.
+One letter in the word is c.
+One letter in the word is c.
+Try again
+['k', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'l', 'l', 'l', 'l', 'l', 'l', 'l', 'd', 'd', 'd', 'd', 'd', 'd', 'c', 'c', 'c', 'c']
+k
+w
+w
+w
+w
+w
+w
+w
+w
+w
+i
+i
+i
+i
+i
+i
+i
+i
+l
+l
+l
+l
+l
+l
+l
+d
+d
+d
+d
+d
+d
+c
+c
+c
+c
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+abefghjmnopqrstuvxyz
+wildc***
+One letter in the word is a.
+One letter in the word is a.
+One letter in the word is a.
+Try again
+['k', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'l', 'l', 'l', 'l', 'l', 'l', 'l', 'd', 'd', 'd', 'd', 'd', 'd', 'c', 'c', 'c', 'c', 'c', 'a', 'a', 'a']
+k
+w
+w
+w
+w
+w
+w
+w
+w
+w
+i
+i
+i
+i
+i
+i
+i
+i
+l
+l
+l
+l
+l
+l
+l
+d
+d
+d
+d
+d
+d
+c
+c
+c
+c
+c
+a
+a
+a
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+befghjmnopqrstuvxyz
+wildca**
+One letter in the word is r.
+One letter in the word is r.
+Try again
+['k', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'l', 'l', 'l', 'l', 'l', 'l', 'l', 'd', 'd', 'd', 'd', 'd', 'd', 'c', 'c', 'c', 'c', 'c', 'a', 'a', 'a', '!', 'r', 'r']
+k
+w
+w
+w
+w
+w
+w
+w
+w
+w
+i
+i
+i
+i
+i
+i
+i
+i
+l
+l
+l
+l
+l
+l
+l
+d
+d
+d
+d
+d
+d
+c
+c
+c
+c
+c
+a
+a
+a
+!
+r
+r
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+befghjmnopqstuvxyz
+wildcar*
+One letter in the word is d.
+Try again
+['k', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'l', 'l', 'l', 'l', 'l', 'l', 'l', 'd', 'd', 'd', 'd', 'd', 'd', 'c', 'c', 'c', 'c', 'c', 'a', 'a', 'a', '!', 'r', 'r', '!', 'd']
+k
+w
+w
+w
+w
+w
+w
+w
+w
+w
+i
+i
+i
+i
+i
+i
+i
+i
+l
+l
+l
+l
+l
+l
+l
+d
+d
+d
+d
+d
+d
+c
+c
+c
+c
+c
+a
+a
+a
+!
+r
+r
+!
+d
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+
+************************
+POSSIBLE CORRECT OUTPUT:
+************************
+Welcome to hangman!
+I am thinking of a word that is 8 letters long
+------
+You have 10 guesses left
+Available letters: abcdefghijklmnopqrstuvwxyz
+Please guess a letter: k
+Oops! That letter is not in my word: ********
+------
+You have 9 guesses left
+Available letters: abcdefghijlmnopqrstuvwxyz
+Please guess a letter: w
+Good guess: w*******
+------
+You have 9 guesses left
+Available letters: abcdefghijlmnopqrstuvxyz
+Please guess a letter: i
+Good guess: wi******
+------
+You have 9 guesses left
+Available letters: abcdefghjlmnopqrstuvxyz
+Please guess a letter: l
+Good guess: wil*****
+------
+You have 9 guesses left
+Available letters: abcdefghjmnopqrstuvxyz
+Please guess a letter: d
+Good guess: wild***d
+------
+You have 9 guesses left
+Available letters: abcefghjmnopqrstuvxyz
+Please guess a letter: c
+Good guess: wildc**d
+------
+You have 9 guesses left
+Available letters: abefghjmnopqrstuvxyz
+Please guess a letter: !
+Letter revealed: a
+wildca+d
+------
+You have 6 guesses left
+Available letters: befghjmnopqrstuvxyz
+Please guess a letter: !
+Letter revealed: r
+Good guess: wildcard
+------
+Congratulations, you won!
+Your total score for this game is: 55
+
+=============================================================
+
+
+=============================================================
+RESULTS FOR TEST CASE: test_play_game_short
+WORD USED IN TEST: hi
+GUESSED LETTERS IN ORDER OF GUESS: ['h', 'e', 'i']
+************************
+YOUR OUTPUT:
+************************
+Loading word list from file...
+  55900 words loaded.
+efghijklmnopqrstuvwxyz
+acdefghijklmnoqrstuvwy
+bcdefghjklmnpqrstvxyz
+
+
+face
+*ove*
+
+
+bas*
+['f', 'c', 'a', 'e']
+f
+c
+a
+e
+['o', 'c', 'a', 'v', 'e']
+o
+c
+a
+v
+e
+[]
+['f', 'c', 'y', 'e']
+['a', 's', 'b', 'e']
+a
+s
+b
+e
+[]
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdefgijklmnopqrstuvwxyz
+h*
+Good guess: h*
+Try again
+['h']
+h
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdfgijklmnopqrstuvwxyz
+h*
+Your letter is not in the word: h*
+Try again
+['h', 'e']
+h
+e
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdfgjklmnopqrstuvwxyz
+hi
+Good guess: hi
+Try again
+['h', 'e', 'i']
+h
+e
+i
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+
+************************
+POSSIBLE CORRECT OUTPUT:
+************************
+Welcome to Hangman!
+I am thinking of a word that is 2 letters long.
+------
+You have 10 guesses left.
+Available letters: abcdefghijklmnopqrstuvwxyz
+Please guess a letter: h
+Good guess: h*
+------
+You have 10 guesses left.
+Available letters: abcdefgijklmnopqrstuvwxyz
+Please guess a letter: e
+Oops! That letter is not in my word: h*
+------
+You have 8 guesses left.
+Available letters: abcdfgijklmnopqrstuvwxyz
+Please guess a letter: i
+Good guess: hi
+------
+Congratulations, you won!
+Your total score for this game is: 22
+=============================================================
+
+
+=============================================================
+RESULTS FOR TEST CASE: test_play_game_short_fail
+WORD USED IN TEST: hi
+GUESSED LETTERS IN ORDER OF GUESS: ['n', 'e', 'i', 'm', 'u', 'k', 'l', 'p', 's']
+************************
+YOUR OUTPUT:
+************************
+[]
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdefghijklmopqrstuvwxyz
+**
+Your letter is not in the word: **
+Try again
+['n']
+n
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdfghijklmopqrstuvwxyz
+**
+Your letter is not in the word: **
+Try again
+['n', 'e']
+n
+e
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdfghjklmopqrstuvwxyz
+*i
+Good guess: *i
+Try again
+['n', 'e', 'i']
+n
+e
+i
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdfghjklopqrstuvwxyz
+*i
+Your letter is not in the word: *i
+Try again
+['n', 'e', 'i', 'm']
+n
+e
+i
+m
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdfghjklopqrstvwxyz
+*i
+Your letter is not in the word: *i
+Try again
+['n', 'e', 'i', 'm', 'u']
+n
+e
+i
+m
+u
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdfghjlopqrstvwxyz
+*i
+Your letter is not in the word: *i
+Try again
+['n', 'e', 'i', 'm', 'u', 'k']
+n
+e
+i
+m
+u
+k
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdfghjopqrstvwxyz
+*i
+Your letter is not in the word: *i
+Try again
+
+************************
+POSSIBLE CORRECT OUTPUT:
+************************
+Welcome to hangman!
+I am thinking of a word that is 2 letters long.
+--------------
+You have 10 guesses left.
+Available Letters: abcdefghijklmnopqrstuvwxyz
+Please guess a letter: n
+Oops! That letter is not in my word: **
+--------------
+You have 9 guesses left.
+Available Letters: abcdefghijklmopqrstuvwxyz
+Please guess a letter: e
+Oops! That letter is not in my word: **
+--------------
+You have 7 guesses left.
+Available Letters: abcdfghijklmopqrstuvwxyz
+Please guess a letter: i
+Good guess: *i
+--------------
+You have 7 guesses left.
+Available Letters: abcdfghjklmopqrstuvwxyz
+Please guess a letter: m
+Oops! That letter is not in my word: *i
+--------------
+You have 6 guesses left.
+Available Letters: abcdfghjklopqrstuvwxyz
+Please guess a letter: u
+Oops! That letter is not in my word: *i
+--------------
+You have 4 guesses left.
+Available Letters: abcdfghjklopqrstvwxyz
+Please guess a letter: k
+Oops! That letter is not in my word: *i
+--------------
+You have 3 guesses left.
+Available Letters: abcdfghjlopqrstvwxyz
+Please guess a letter: l
+Oops! That letter is not in my word: *i
+--------------
+You have 2 guesses left.
+Available Letters: abcdfghjopqrstvwxyz
+Please guess a letter: p
+Oops! That letter is not in my word: *i
+--------------
+You have 1 guess left.
+Available Letters: abcdfghjoqrstvwxyz
+Please guess a letter: s
+Oops! That letter is not in my word: *i
+-------
+Sorry, you ran out of guesses. The word was hi
+=============================================================
+
+
+=============================================================
+RESULTS FOR TEST CASE: test_play_game_wildcard
+WORD USED IN TEST: wildcard
+GUESSED LETTERS IN ORDER OF GUESS: ['k', 'w', 'i', 'l', 'd', 'c', '!', '!']
+************************
+YOUR OUTPUT:
+************************
+[]
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+abcdefghijlmnopqrstuvwxyz
+********
+One letter in the word is w.
+One letter in the word is w.
+One letter in the word is w.
+One letter in the word is w.
+One letter in the word is w.
+One letter in the word is w.
+One letter in the word is w.
+One letter in the word is w.
+Try again
+['k', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w']
+k
+w
+w
+w
+w
+w
+w
+w
+w
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+abcdefghijlmnopqrstuvxyz
+w*******
+One letter in the word is i.
+One letter in the word is i.
+One letter in the word is i.
+One letter in the word is i.
+One letter in the word is i.
+One letter in the word is i.
+One letter in the word is i.
+You won
+['k', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'i', 'i', 'i', 'i', 'i', 'i', 'i']
+k
+w
+w
+w
+w
+w
+w
+w
+w
+w
+i
+i
+i
+i
+i
+i
+i
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+abcdefghjlmnopqrstuvxyz
+wi******
+One letter in the word is l.
+One letter in the word is l.
+One letter in the word is l.
+One letter in the word is l.
+One letter in the word is l.
+One letter in the word is l.
+Try again
+['k', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'l', 'l', 'l', 'l', 'l', 'l']
+k
+w
+w
+w
+w
+w
+w
+w
+w
+w
+i
+i
+i
+i
+i
+i
+i
+i
+l
+l
+l
+l
+l
+l
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+abcdefghjmnopqrstuvxyz
+wil*****
+One letter in the word is d.
+One letter in the word is d.
+One letter in the word is d.
+One letter in the word is d.
+One letter in the word is d.
+Try again
+['k', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'l', 'l', 'l', 'l', 'l', 'l', 'l', 'd', 'd', 'd', 'd', 'd']
+k
+w
+w
+w
+w
+w
+w
+w
+w
+w
+i
+i
+i
+i
+i
+i
+i
+i
+l
+l
+l
+l
+l
+l
+l
+d
+d
+d
+d
+d
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+abcefghjmnopqrstuvxyz
+wild****
+One letter in the word is c.
+One letter in the word is c.
+One letter in the word is c.
+One letter in the word is c.
+Try again
+['k', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'l', 'l', 'l', 'l', 'l', 'l', 'l', 'd', 'd', 'd', 'd', 'd', 'd', 'c', 'c', 'c', 'c']
+k
+w
+w
+w
+w
+w
+w
+w
+w
+w
+i
+i
+i
+i
+i
+i
+i
+i
+l
+l
+l
+l
+l
+l
+l
+d
+d
+d
+d
+d
+d
+c
+c
+c
+c
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+abefghjmnopqrstuvxyz
+wildc***
+One letter in the word is a.
+One letter in the word is a.
+One letter in the word is a.
+Try again
+['k', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'l', 'l', 'l', 'l', 'l', 'l', 'l', 'd', 'd', 'd', 'd', 'd', 'd', 'c', 'c', 'c', 'c', 'c', 'a', 'a', 'a']
+k
+w
+w
+w
+w
+w
+w
+w
+w
+w
+i
+i
+i
+i
+i
+i
+i
+i
+l
+l
+l
+l
+l
+l
+l
+d
+d
+d
+d
+d
+d
+c
+c
+c
+c
+c
+a
+a
+a
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+befghjmnopqrstuvxyz
+wildca**
+One letter in the word is r.
+One letter in the word is r.
+Try again
+['k', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'l', 'l', 'l', 'l', 'l', 'l', 'l', 'd', 'd', 'd', 'd', 'd', 'd', 'c', 'c', 'c', 'c', 'c', 'a', 'a', 'a', '!', 'r', 'r']
+k
+w
+w
+w
+w
+w
+w
+w
+w
+w
+i
+i
+i
+i
+i
+i
+i
+i
+l
+l
+l
+l
+l
+l
+l
+d
+d
+d
+d
+d
+d
+c
+c
+c
+c
+c
+a
+a
+a
+!
+r
+r
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+befghjmnopqstuvxyz
+wildcar*
+One letter in the word is d.
+Try again
+['k', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'l', 'l', 'l', 'l', 'l', 'l', 'l', 'd', 'd', 'd', 'd', 'd', 'd', 'c', 'c', 'c', 'c', 'c', 'a', 'a', 'a', '!', 'r', 'r', '!', 'd']
+k
+w
+w
+w
+w
+w
+w
+w
+w
+w
+i
+i
+i
+i
+i
+i
+i
+i
+l
+l
+l
+l
+l
+l
+l
+d
+d
+d
+d
+d
+d
+c
+c
+c
+c
+c
+a
+a
+a
+!
+r
+r
+!
+d
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+
+************************
+POSSIBLE CORRECT OUTPUT:
+************************
+Welcome to hangman!
+I am thinking of a word that is 8 letters long
+------
+You have 10 guesses left
+Available letters: abcdefghijklmnopqrstuvwxyz
+Please guess a letter: k
+Oops! That letter is not in my word: ********
+------
+You have 9 guesses left
+Available letters: abcdefghijlmnopqrstuvwxyz
+Please guess a letter: w
+Good guess: w*******
+------
+You have 9 guesses left
+Available letters: abcdefghijlmnopqrstuvxyz
+Please guess a letter: i
+Good guess: wi******
+------
+You have 9 guesses left
+Available letters: abcdefghjlmnopqrstuvxyz
+Please guess a letter: l
+Good guess: wil*****
+------
+You have 9 guesses left
+Available letters: abcdefghjmnopqrstuvxyz
+Please guess a letter: d
+Good guess: wild***d
+------
+You have 9 guesses left
+Available letters: abcefghjmnopqrstuvxyz
+Please guess a letter: c
+Good guess: wildc**d
+------
+You have 9 guesses left
+Available letters: abefghjmnopqrstuvxyz
+Please guess a letter: !
+Letter revealed: a
+wildca+d
+------
+You have 6 guesses left
+Available letters: befghjmnopqrstuvxyz
+Please guess a letter: !
+Letter revealed: r
+Good guess: wildcard
+------
+Congratulations, you won!
+Your total score for this game is: 55
+
+=============================================================
+
+
+=============================================================
+RESULTS FOR TEST CASE: test_play_game_short
+WORD USED IN TEST: hi
+GUESSED LETTERS IN ORDER OF GUESS: ['h', 'e', 'i']
+************************
+YOUR OUTPUT:
+************************
+Loading word list from file...
+  55900 words loaded.
+efghijklmnopqrstuvwxyz
+acdefghijklmnoqrstuvwy
+bcdefghjklmnpqrstvxyz
+
+
+face
+*ove*
+
+
+bas*
+['f', 'c', 'a', 'e']
+f
+c
+a
+e
+['o', 'c', 'a', 'v', 'e']
+o
+c
+a
+v
+e
+[]
+['f', 'c', 'y', 'e']
+['a', 's', 'b', 'e']
+a
+s
+b
+e
+[]
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdefgijklmnopqrstuvwxyz
+h*
+Good guess: h*
+Try again
+['h']
+h
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdfgijklmnopqrstuvwxyz
+h*
+Your letter is not in the word: h*
+Try again
+['h', 'e']
+h
+e
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdfgjklmnopqrstuvwxyz
+hi
+Good guess: hi
+Try again
+['h', 'e', 'i']
+h
+e
+i
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+
+************************
+POSSIBLE CORRECT OUTPUT:
+************************
+Welcome to Hangman!
+I am thinking of a word that is 2 letters long.
+------
+You have 10 guesses left.
+Available letters: abcdefghijklmnopqrstuvwxyz
+Please guess a letter: h
+Good guess: h*
+------
+You have 10 guesses left.
+Available letters: abcdefgijklmnopqrstuvwxyz
+Please guess a letter: e
+Oops! That letter is not in my word: h*
+------
+You have 8 guesses left.
+Available letters: abcdfgijklmnopqrstuvwxyz
+Please guess a letter: i
+Good guess: hi
+------
+Congratulations, you won!
+Your total score for this game is: 22
+=============================================================
+
+
+=============================================================
+RESULTS FOR TEST CASE: test_play_game_short_fail
+WORD USED IN TEST: hi
+GUESSED LETTERS IN ORDER OF GUESS: ['n', 'e', 'i', 'm', 'u', 'k', 'l', 'p', 's']
+************************
+YOUR OUTPUT:
+************************
+[]
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdefghijklmopqrstuvwxyz
+**
+Your letter is not in the word: **
+Try again
+['n']
+n
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdfghijklmopqrstuvwxyz
+**
+Your letter is not in the word: **
+Try again
+['n', 'e']
+n
+e
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdfghjklmopqrstuvwxyz
+*i
+Good guess: *i
+Try again
+['n', 'e', 'i']
+n
+e
+i
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdfghjklopqrstuvwxyz
+*i
+Your letter is not in the word: *i
+Try again
+['n', 'e', 'i', 'm']
+n
+e
+i
+m
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdfghjklopqrstvwxyz
+*i
+Your letter is not in the word: *i
+Try again
+['n', 'e', 'i', 'm', 'u']
+n
+e
+i
+m
+u
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdfghjlopqrstvwxyz
+*i
+Your letter is not in the word: *i
+Try again
+['n', 'e', 'i', 'm', 'u', 'k']
+n
+e
+i
+m
+u
+k
+Secret word: hi
+-----
+Hangman starts. The secret word has 2 characters.
+abcdfghjopqrstvwxyz
+*i
+Your letter is not in the word: *i
+Try again
+
+************************
+POSSIBLE CORRECT OUTPUT:
+************************
+Welcome to hangman!
+I am thinking of a word that is 2 letters long.
+--------------
+You have 10 guesses left.
+Available Letters: abcdefghijklmnopqrstuvwxyz
+Please guess a letter: n
+Oops! That letter is not in my word: **
+--------------
+You have 9 guesses left.
+Available Letters: abcdefghijklmopqrstuvwxyz
+Please guess a letter: e
+Oops! That letter is not in my word: **
+--------------
+You have 7 guesses left.
+Available Letters: abcdfghijklmopqrstuvwxyz
+Please guess a letter: i
+Good guess: *i
+--------------
+You have 7 guesses left.
+Available Letters: abcdfghjklmopqrstuvwxyz
+Please guess a letter: m
+Oops! That letter is not in my word: *i
+--------------
+You have 6 guesses left.
+Available Letters: abcdfghjklopqrstuvwxyz
+Please guess a letter: u
+Oops! That letter is not in my word: *i
+--------------
+You have 4 guesses left.
+Available Letters: abcdfghjklopqrstvwxyz
+Please guess a letter: k
+Oops! That letter is not in my word: *i
+--------------
+You have 3 guesses left.
+Available Letters: abcdfghjlopqrstvwxyz
+Please guess a letter: l
+Oops! That letter is not in my word: *i
+--------------
+You have 2 guesses left.
+Available Letters: abcdfghjopqrstvwxyz
+Please guess a letter: p
+Oops! That letter is not in my word: *i
+--------------
+You have 1 guess left.
+Available Letters: abcdfghjoqrstvwxyz
+Please guess a letter: s
+Oops! That letter is not in my word: *i
+-------
+Sorry, you ran out of guesses. The word was hi
+=============================================================
+
+
+=============================================================
+RESULTS FOR TEST CASE: test_play_game_wildcard
+WORD USED IN TEST: wildcard
+GUESSED LETTERS IN ORDER OF GUESS: ['k', 'w', 'i', 'l', 'd', 'c', '!', '!']
+************************
+YOUR OUTPUT:
+************************
+[]
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+abcdefghijlmnopqrstuvwxyz
+********
+One letter in the word is w.
+One letter in the word is w.
+One letter in the word is w.
+One letter in the word is w.
+One letter in the word is w.
+One letter in the word is w.
+One letter in the word is w.
+One letter in the word is w.
+Try again
+['k', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w']
+k
+w
+w
+w
+w
+w
+w
+w
+w
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+abcdefghijlmnopqrstuvxyz
+w*******
+One letter in the word is i.
+One letter in the word is i.
+One letter in the word is i.
+One letter in the word is i.
+One letter in the word is i.
+One letter in the word is i.
+One letter in the word is i.
+You won
+['k', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'i', 'i', 'i', 'i', 'i', 'i', 'i']
+k
+w
+w
+w
+w
+w
+w
+w
+w
+w
+i
+i
+i
+i
+i
+i
+i
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+abcdefghjlmnopqrstuvxyz
+wi******
+One letter in the word is l.
+One letter in the word is l.
+One letter in the word is l.
+One letter in the word is l.
+One letter in the word is l.
+One letter in the word is l.
+Try again
+['k', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'l', 'l', 'l', 'l', 'l', 'l']
+k
+w
+w
+w
+w
+w
+w
+w
+w
+w
+i
+i
+i
+i
+i
+i
+i
+i
+l
+l
+l
+l
+l
+l
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+abcdefghjmnopqrstuvxyz
+wil*****
+One letter in the word is d.
+One letter in the word is d.
+One letter in the word is d.
+One letter in the word is d.
+One letter in the word is d.
+Try again
+['k', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'l', 'l', 'l', 'l', 'l', 'l', 'l', 'd', 'd', 'd', 'd', 'd']
+k
+w
+w
+w
+w
+w
+w
+w
+w
+w
+i
+i
+i
+i
+i
+i
+i
+i
+l
+l
+l
+l
+l
+l
+l
+d
+d
+d
+d
+d
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+abcefghjmnopqrstuvxyz
+wild****
+One letter in the word is c.
+One letter in the word is c.
+One letter in the word is c.
+One letter in the word is c.
+Try again
+['k', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'l', 'l', 'l', 'l', 'l', 'l', 'l', 'd', 'd', 'd', 'd', 'd', 'd', 'c', 'c', 'c', 'c']
+k
+w
+w
+w
+w
+w
+w
+w
+w
+w
+i
+i
+i
+i
+i
+i
+i
+i
+l
+l
+l
+l
+l
+l
+l
+d
+d
+d
+d
+d
+d
+c
+c
+c
+c
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+abefghjmnopqrstuvxyz
+wildc***
+One letter in the word is a.
+One letter in the word is a.
+One letter in the word is a.
+Try again
+['k', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'l', 'l', 'l', 'l', 'l', 'l', 'l', 'd', 'd', 'd', 'd', 'd', 'd', 'c', 'c', 'c', 'c', 'c', 'a', 'a', 'a']
+k
+w
+w
+w
+w
+w
+w
+w
+w
+w
+i
+i
+i
+i
+i
+i
+i
+i
+l
+l
+l
+l
+l
+l
+l
+d
+d
+d
+d
+d
+d
+c
+c
+c
+c
+c
+a
+a
+a
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+befghjmnopqrstuvxyz
+wildca**
+One letter in the word is r.
+One letter in the word is r.
+Try again
+['k', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'l', 'l', 'l', 'l', 'l', 'l', 'l', 'd', 'd', 'd', 'd', 'd', 'd', 'c', 'c', 'c', 'c', 'c', 'a', 'a', 'a', '!', 'r', 'r']
+k
+w
+w
+w
+w
+w
+w
+w
+w
+w
+i
+i
+i
+i
+i
+i
+i
+i
+l
+l
+l
+l
+l
+l
+l
+d
+d
+d
+d
+d
+d
+c
+c
+c
+c
+c
+a
+a
+a
+!
+r
+r
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+befghjmnopqstuvxyz
+wildcar*
+One letter in the word is d.
+Try again
+['k', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'l', 'l', 'l', 'l', 'l', 'l', 'l', 'd', 'd', 'd', 'd', 'd', 'd', 'c', 'c', 'c', 'c', 'c', 'a', 'a', 'a', '!', 'r', 'r', '!', 'd']
+k
+w
+w
+w
+w
+w
+w
+w
+w
+w
+i
+i
+i
+i
+i
+i
+i
+i
+l
+l
+l
+l
+l
+l
+l
+d
+d
+d
+d
+d
+d
+c
+c
+c
+c
+c
+a
+a
+a
+!
+r
+r
+!
+d
+Secret word: wildcard
+-----
+Hangman starts. The secret word has 8 characters.
+
+************************
+POSSIBLE CORRECT OUTPUT:
+************************
+Welcome to hangman!
+I am thinking of a word that is 8 letters long
+------
+You have 10 guesses left
+Available letters: abcdefghijklmnopqrstuvwxyz
+Please guess a letter: k
+Oops! That letter is not in my word: ********
+------
+You have 9 guesses left
+Available letters: abcdefghijlmnopqrstuvwxyz
+Please guess a letter: w
+Good guess: w*******
+------
+You have 9 guesses left
+Available letters: abcdefghijlmnopqrstuvxyz
+Please guess a letter: i
+Good guess: wi******
+------
+You have 9 guesses left
+Available letters: abcdefghjlmnopqrstuvxyz
+Please guess a letter: l
+Good guess: wil*****
+------
+You have 9 guesses left
+Available letters: abcdefghjmnopqrstuvxyz
+Please guess a letter: d
+Good guess: wild***d
+------
+You have 9 guesses left
+Available letters: abcefghjmnopqrstuvxyz
+Please guess a letter: c
+Good guess: wildc**d
+------
+You have 9 guesses left
+Available letters: abefghjmnopqrstuvxyz
+Please guess a letter: !
+Letter revealed: a
+wildca+d
+------
+You have 6 guesses left
+Available letters: befghjmnopqrstuvxyz
+Please guess a letter: !
+Letter revealed: r
+Good guess: wildcard
+------
+Congratulations, you won!
+Your total score for this game is: 55
+
+=============================================================
+
+

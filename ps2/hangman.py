@@ -59,7 +59,7 @@ def has_player_won(secret_word, letters_guessed):
     print(letters_guessed)
     if len(letters_guessed) > 0 and len(secret_word) > 0:
        for l in letters_guessed:
-           print(l)
+          
            if l in secret_word:
                guess += l
     if len(secret_word) == len(guess):
@@ -83,13 +83,13 @@ def get_word_progress(secret_word, letters_guessed):
     guess = ''
     if len(letters_guessed) > 0 and len(secret_word) > 0:
         for char in secret_word:
-            if char in letters_guessed:
-                if char not in guess:
-                    guess += char
-                else:
-                    guess += '*'
-    print(guess)
+            if char in letters_guessed and char not in guess:
+                guess+=char
+            else:
+                guess+='*'
+ 
     return guess
+    
     
     
     
@@ -109,12 +109,12 @@ def get_available_letters(letters_guessed):
     # FILL IN YOUR CODE HERE AND DELETE "pass"
     not_guess = ''
     alphabet = string.ascii_lowercase
-    print(alphabet)
+  
     if len(letters_guessed) > 0:
         for char in alphabet:
             if char not in letters_guessed:
                 not_guess += char
-    print(not_guess)
+    
     return not_guess
 
 
@@ -164,38 +164,50 @@ def hangman(secret_word, with_help):
     available_letters = ''
     word_progress = ''
     
-    while guesses > 0:
-        vowels = 'aeiou'
-        length = len(secret_word)
-        guess = input(f'Hangman starts. The secret word has {length} characters. You have {guesses} guesses left.The letters not guessed: {available_letters}.The progress of the word : {word_progress}. Guess a letter:')
-        if guess != '!' :
-            if guess not in secret_word:
-                letters_guessed.append(guess)
+    vowels = 'aeiou'
+    length = len(secret_word)
+    
+    
+    while guesses > 0 and len(secret_word) < 10:
+        won = has_player_won(secret_word, letters_guessed)
+      
+        print(f'Secret word: {secret_word}')
+        print("--------------------------")
+        print(f'Hangman starts. The secret word has {length} characters.')
+        guess = input(f' You have {guesses} guesses left. Available letters: {available_letters}. Guess a letter:')
+        letters_guessed.append(guess)
+        available_letters = get_available_letters(letters_guessed)
+        word_progress = get_word_progress(secret_word, letters_guessed)
+            
+        if with_help and '!' == guess :
+            
+           if guesses > 4:
+               guesses -= 3
+               
+           for c in word_progress:
+               if c == '*':
+                   index = word_progress.index(c)
+                   letter = secret_word[index]
+                   print(f'One letter in the word is {letter}.')
+                   letters_guessed.append(letter)
+                   continue     
                 
-                if guess in vowels:
-                    guesses -= 2
-                else:
-                    guesses -= 1
-                    
-            guesses -= 1
-            available_letters = get_available_letters(letters_guessed)
-            word_progress = get_word_progress(secret_word, letters_guessed)
-            won = has_player_won(secret_word, letters_guessed)   
-            if  won:
-                print("You won!")
-                break
-       
         else:
-            if guesses > 4:
-                guesses -= 3
-                word_progress = get_word_progress(secret_word, letters_guessed)
-                for c in word_progress:
-                    if c == '*':
-                        index = word_progress.index(c)
-                        letter = secret_word[index]
-                        print(f'One letter in the word is {letter}.')
-                        letters_guessed.append(letter)
-                        continue
+           if guess not in secret_word:
+              print(f'Your letter is not in the word: {word_progress}')
+           else:
+               print(f'Good guess: {word_progress}')
+           if guess in vowels:
+               guesses-=2
+           else:
+               guesses-=1
+            
+          
+        if won:
+            print("You won")
+        else:
+            print("Try again")
+    
         
 
     
@@ -209,7 +221,7 @@ if __name__ == "__main__":
     # To test your game, uncomment the following three lines.
 
      secret_word = choose_word(wordlist)
-     with_help = False
+     with_help = True
      hangman(secret_word, with_help)
 
     # After you complete with_help functionality, change with_help to True

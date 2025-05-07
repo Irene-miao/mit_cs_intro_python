@@ -3,6 +3,19 @@
 Created on Sat May  3 16:05:31 2025
 
 @author: meow
+
+SOLUTION:
+     
+def all_true(n, Lf):
+ flag = 
+True 
+for f in Lf: 
+if not f(n):
+ flag = 
+False 
+break 
+return flag
+    
 """
 
 
@@ -13,6 +26,12 @@ def all_true(n, Lf):
     with n as a parameter. Otherwise returns False. 
     """
     # Your code here
+    for f in Lf:
+        if f(n):
+            return True
+
+    return False
+    
 
 # Examples:    
 all_true() # prints 6
