@@ -3,6 +3,24 @@
 Created on Tue May  6 15:17:39 2025
 
 @author: meow
+
+SOLUTION:
+    def sum_str_lengths(L):
+ total = 0 
+for i in L: 
+if type(i) == str:
+ total += len(i) 
+elif type(i) == list: 
+for e in i: 
+if type(e) == str:
+ total += len(e) 
+else: 
+raise ValueError 
+else: 
+raise ValueError 
+return total
+    
+    
 """
 
 def sum_str_lengths(L):
