@@ -80,7 +80,19 @@ def decrypt_message_try_pads(ciphertext, pads):
 
     Returns: (PlaintextMessage) A message with the decrypted ciphertext and the best pad
     '''
-    raise NotImplementedError  # delete this line and replace with your code here
+    print(f'cipher: {ciphertext}')
+    encrypted_msg = ciphertext.get_text()
+    print(f'encrypt msg : {encrypted_msg}')
+    word_list = load_words(r"C:\Users\super\OneDrive\Desktop\mit_intro_cs_python\ps4\words.txt")
+    for pad in pads:
+        print(f'list: {pad}')
+        obj, decrypted_text = ciphertext.decrypt_message(pad)
+        print(f'decrypted text: {decrypted_text}, obj: {obj}')
+        word = decrypted_text.get_text()
+        print(f'word: {word}')
+        if is_word(word_list, word):
+            print(f'pad : {pad}')
+            return ps4b.PlaintextMessage(word, pad)
 
 
 def decode_story():

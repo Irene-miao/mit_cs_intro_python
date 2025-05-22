@@ -1,5 +1,5 @@
 # Problem Set 4A
-# Name:
+# Name: meow
 # Collaborators:
 
 from tree import Node # Imports the Node object used to construct trees
@@ -7,9 +7,9 @@ from tree import Node # Imports the Node object used to construct trees
 # Part A0: Data representation
 # Fill out the following variables correctly.
 # If correct, the test named test_data_representation should pass.
-tree1 = None #TODO
-tree2 = None #TODO
-tree3 = None #TODO
+tree1 = Node(8, Node(2, Node(1), Node(6)), Node(10)) #TODO
+tree2 = Node(7, Node(2, Node(1), Node(5, Node(3), Node(6))), Node(9,Node(8), Node(10))) #TODO
+tree3 = Node(5, Node(3, Node(2), Node(4)), Node(14, Node(12), Node(21, Node(20), Node(26)))) #TODO
 
 def find_tree_height(tree):
     '''
@@ -20,7 +20,17 @@ def find_tree_height(tree):
         The integer depth of the tree
     '''
     # TODO: Remove pass and write your code here
-    pass
+    
+    
+    if tree is None: 
+       return -1
+   
+    left = find_tree_height(tree.get_left_child())
+    right = find_tree_height(tree.get_right_child())
+    return max(left,right)+1
+    
+        
+        
 
 def is_heap(tree, compare_func):
     '''
@@ -34,7 +44,18 @@ def is_heap(tree, compare_func):
         True if the entire tree satisfies the compare_func function; False otherwise
     '''
     # TODO: Remove pass and write your code here
-    pass
+    if tree is None: 
+        return True
+    parent = tree.get_value()
+    left = tree.get_left_child() 
+    right = tree.get_right_child()
+   
+    if left and not compare_func(left.get_value(), parent):
+        return False
+    if right and not compare_func(right.get_value(), parent):
+        return False
+    
+    return is_heap(left, compare_func) and is_heap(right, compare_func)
 
 
 

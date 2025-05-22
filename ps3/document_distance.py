@@ -118,23 +118,22 @@ def calculate_similarity_score(freq_dict1, freq_dict2):
     
     print(f'w1:{freq_dict1}, w2: {freq_dict2}')
     total = 0
-    print(f'total: {total}')
-    diff = 0
     d = {}
    
     for k in freq_dict1.keys():
         if k in freq_dict2:
-            diff+= (freq_dict1[k] - freq_dict2[k])
+            d[k] =  (freq_dict1[k] - freq_dict2[k])
         else:
-            diff+= freq_dict1[k]
+            d[k] = freq_dict1[k]
     
     for a in freq_dict2.keys():
         if a not in freq_dict1:
-            diff += freq_dict2[a]
+            d[a] = freq_dict2[a]
+  
     total = sum(freq_dict1.values()) + sum(freq_dict2.values())
+    total_d = sum(d.values())
     
-    print(f'total: {total}')
-    return  1-(diff/total)
+    return  (1-(total_d/total))
 
 
 ### Problem 4: Most Frequent Word(s) ###
@@ -189,11 +188,15 @@ def get_tf(file_path):
         in the document) / (total number of words in the document)
     * Think about how we can use get_frequencies from earlier
     """
-    list = text_to_list(file_path)
-    print(f'list: {list}')
+    d = {}
+    text = load_file(file_path)
+    list = text_to_list(text)
+    
     freq = get_frequencies(list)
-    print(f'freq: {freq}')
-    return freq
+    
+    for word in freq:
+        d[word] = freq[word]/ len(list)
+    return d
 
 def get_idf(file_paths):
     """
@@ -208,18 +211,30 @@ def get_idf(file_paths):
 
     """
     d = {}
-    documents = len(file_paths)
-    for name in file_paths:
-        count = 0
-        if name in file_paths:
-            count+=1
-        d[name] = math.log10(documents/count)
-    
-    return d
-        
+    dict = {}
+    list = {}
+    length = len(file_paths)
+    for file in file_paths:
+        text = load_file(file)
+   
+        d[file] = text_to_list(text)
+        for word in text_to_list(text):
+            if word not in list:
+                list[word] = 0
+    for l in list:
+        for v in d.values():
+            if l in v:
+                list[l]+=1
+                continue
+   
+    for l in list:
+        dict[l] = math.log10(len(d)/list[l])
+    return dict
+                
+            
 
 def get_tfidf(tf_file_path, idf_file_paths):
-    """
+        """
         Args:
             tf_file_path: name of file in the form of a string (used to calculate TF)
             idf_file_paths: list of names of files, where each file name is a string
@@ -231,8 +246,15 @@ def get_tfidf(tf_file_path, idf_file_paths):
 
         * TF-IDF(i) = TF(i) * IDF(i)
         """
-    pass
-
+        list = []
+        tf = get_tf(tf_file_path)
+        idf = get_idf(idf_file_paths)
+      
+        for item in tf:
+            if item in idf:
+                tp = (item, tf[item]*idf[item])
+                list.append(tp)
+        return list
 
 if __name__ == "__main__":
     pass
